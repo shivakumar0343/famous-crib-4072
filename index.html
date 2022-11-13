@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #topnav{
+        padding: 5px;
+        
+        
+    }
+    #topnav>ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: end;
+    }
+    #topnav>ul li{
+        margin:0px 60px;
+    }
+   
+    #bottomnav>ul{
+        border:1px solid none;
+        display:flex;
+        justify-content: space-between;
+        width:70%;
+        list-style-type: none;
+        text-align: center;
+    }
+    #bottomnav img{
+        height:25px
+    }
+    .navbar{
+        background-color: skyblue;
+    }
+    
+    .shiva{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+    }
+    .trending{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 10px;
+        
+        
+        
+        
+    }
+    #midnav{
+        display: flex;
+        height: 50px;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        
+    }
+    #midnav>*{
+        height: 40px;
+        margin: 0px 50px;
+    }
+    #midnav>input{
+        height: 40px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .deals of day{
+        display:flex
+    }
+    .middle{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        gap: 2px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        text-align: center;
+        background-color: lightblue;
+        color: black;
+        
+    }
+    .best {
+        display:flex;
+        align-content: center;
+        border: 1px solid aliceblue;
+
+    }
+    .best>div>h3{
+        color: red;
+        border: 10px;
+    }
+   
+    #shiva>div>h3{
+        color: red;
+    }
+    
+    #kumar>div>h3{
+        color: red;
+    }
+    
+    #shiva_01>div>h3{
+        color: red;
+    }
+   
+
+    
+    #shiva_02>div>h3{
+        color: red;
+    }
+
+    #shiva_03>div>h3{
+        color: red;
+    }
+
+    #shiva_04>div>h3{
+        color: red;
+    }
+    #mani{
+        display: grid;
+        grid-template-columns:repeat(6,1fr) ;
+    }
+    #why{
+        display:grid;
+        text-align: center;
+        color: rgb(13, 122, 165);
+        
+
+        
+    }
+    #input{
+        display:grid;
+        text-align: center;
+        height: 50px;
+    }
+    #top{
+        display:grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: auto;
+    }
+    #top>div>img{
+        width: 100px;
+    }
+    #top>div>h4{
+    color: red;
+    }
+    .best>div>h3{
+        color: red;
+    }
+    .inner-enjoy-life{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 15px;
+}
+.inner-enjoy-life>div:nth-child(1){
+    grid-area: 1 / 1 / 3 / 3;
+}
+.inner-enjoy-life>div:nth-child(2){
+    grid-area: 1 / 3 / 2 / 5;
+}
+.inner-enjoy-life>div:nth-child(3){
+    grid-area: 1 / 5 / 2 / 7;
+}
+.inner-enjoy-life>div:nth-child(4){
+    grid-area: 2 / 3 / 3 / 5;
+}
+.inner-enjoy-life>div:nth-child(5){
+    grid-area: 2 / 5 / 3 / 7;
+}
+.inner-enjoy-life>div:nth-child(1) img{
+    width: 100%;
+}
+.inner-enjoy-life>div{
+    display: flex;
+    justify-content: space-between;
+}
+.inner-enjoy-life>div img{
+    width: 50%;
+    height: 100%;
+}
+.inner-best-sellers{
+    display: flex;
+    justify-content: space-around;
+}
+.inner-best-sellers>div{
+    width: 23%;
+}
+.inner-banner{
+    width: 100%;
+}
+.inner-banner img{
+    width: 100%;
+    border-radius: 10px;
+}
+.navbar~*{
+    width:80%;
+    margin:auto
+}
+.trending>div>img{
+    width: 170px;
+    height: 170px;
+    margin: auto;
+    display: block;
+}
+#shiva>div{
+    width: 18%;
+    border:1px solid none;;
+    margin:auto;
+}
+#shiva>div>img{
+    width:100%;
+    height: 50%;
+}
+#shiva>div:nth-child(1)>img{
+    width:100%;
+    height:300px;
+}
+#shiva{
+    display:flex;
+    border: 1px solid none;;
+}
+#kumar>div{
+    width: 18%;
+    border:1px solid none;;
+    margin:auto;
+}
+#kumar>div>img{
+    width:100%;
+    height: 50%;
+}
+#kumar>div:nth-child(1)>img{
+    width:100%;
+    height:300px;
+}
+#kumar{
+    display:flex;
+    border: 1px solid none;;
+}
+#shiva_01>div{
+    width: 18%;
+    border:1px solid none;;
+    margin:auto;
+}
+#shiva_01>div>img{
+    width:100%;
+    height: 50%;
+}
+#shiva_01>div:nth-child(1)>img{
+    width:100%;
+    height:300px;
+}
+#shiva_01{
+    display:flex;
+    border: 1px solid none;;
+}
+#shiva_02>div{
+    width: 18%;
+    border:1px solid none;;
+    margin:auto;
+}
+#shiva_02>div>img{
+    width:100%;
+    height: 50%;
+}
+#shiva_02>div:nth-child(1)>img{
+    width:100%;
+    height:300px;
+}
+#shiva_02{
+    display:flex;
+    border: 1px solid none;;
+}
+#shiva_03>div{
+    width: 18%;
+    border:1px solid none;;
+    margin:auto;
+}
+#shiva_03>div>img{
+    width:100%;
+    height: 50%;
+}
+#shiva_03>div:nth-child(1)>img{
+    width:100%;
+    height:300px;
+}
+#shiva_03{
+    display:flex;
+    border: 1px solid none;;
+}
+#shiva_04>div{
+    width: 18%;
+    border:1px solid none;;
+    margin:auto;
+}
+#shiva_04>div>img{
+    width:100%;
+    height: 50%;
+}
+#shiva_04>div:nth-child(1)>img{
+    width:100%;
+    height:300px;
+}
+#shiva_04{
+    display:flex;
+    border: 1px solid none;;
+}
+
+
+    
+</style>
+<body>
+    <div class="navbar">
+        <div id="topnav">
+            <ul>
+                <li>Save BIG With our appl</li>
+                <li>Language</li>
+                <li>Support Center</li>
+            </ul>
+        </div>
+        <hr>
+        <div id="midnav">
+            <img src="data:image/jpeg;base64,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"/>
+            <select name="category" id="allcat">
+                <option value="">All Categories</option>
+                <option value="">Smart home & Garden</option>
+            </select>
+            <input type="text">
+            <a href="./sign.html"></a>
+            <a href="">Cart</a>
+        </div>
+        <div id="bottomnav">
+            <ul>
+                <li>Categories</li>
+                <li>New</li>
+                <li>Bestselling</li>
+                <li>Clearance</li>
+                <li>Deal</li>
+                <li>Coupon</li>
+                <li>App only</li>
+                <li><img src="https://img.gkbcdn.com/s3/bn/2209/174x35b-631b1e9b2b40c9215c578605.gif" alt="" ></li>
+            </ul>
+        </div>
+    </div>
+    <h1>Deals of the day</h1>
+    <div id="top">
+        <div>
+            <img src="https://img.gkbcdn.com/p/2019-01-31/tronsmart-element-mega-bluetooth-speaker-black-1571991584812._w280_p1_.jpg"/>
+            <h4>34%OFF</h4>
+            <h3>₹3690.51</h3>
+            <h5>130 Left</h5>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2020-04-03/ENCHEN-Multi-purpose-Electric-Hair-Clipper-Trimmer-Black-901271-._w280_p1_.jpg"/>
+            <h4>34%OFF</h4>
+            <h3>₹3690.51</h3>
+            <h5>130 Left</h5>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2017-07-26/xiaomi-wifi-amplifier-pro-black-1574132393616._w280_p1_.jpg"/>
+            <h4>34%OFF</h4>
+            <h3>₹3690.51</h3>
+            <h5>130 Left</h5>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2017-10-21/c120-6-axis-gyro-2-4g-mini-air-mouse-1571989094158._w280_p1_.jpg"/>
+            <h4>34%OFF</h4>
+            <h3>₹3690.51</h3>
+            <h5>130 Left</h5>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2020-04-13/laserpecker-pro-smart-laser-engraver-grey-1586759146702._w280_p1_.jpg"/>
+            <h4>34%OFF</h4>
+            <h3>₹3690.51</h3>
+            <h5>130 Left</h5>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2019-11-16/i100000-pro1-bluetooth-5-0-tws-earphones-used-independently-1574132876970._w280_p1_.jpg"/>
+            <h4>34%OFF</h4>
+            <h3>₹3690.51</h3>
+            <h5>130 Left</h5>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2019-08-27/tronsmart-t2-plus-20w--bluetooth-5-0-speaker-tws-1571994588089._w280_p1_.jpg"/>
+            <h4>34%OFF</h4>
+            <h3>₹3690.51</h3>
+            <h5>130 Left</h5>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2019-01-31/tronsmart-element-force-portable-bluetooth-speaker-1571993707403._w280_p1_.jpg"/>
+            <h4>34%OFF</h4>
+            <h3>₹3690.51</h3>
+            <h5>130 Left</h5>
+        </div>
+    </div>
+
+    <h1>Trending Categories</h1>
+    <div class="trending">
+       
+        <div>
+            <img src="https://img.gkbcdn.com/bn/2211/3-636b24682b40c91ee886b172._p1_.jpg"/>
+            <h2>3D Printers & Electronics</h2>
+            <p>3D Printers,laser engravers,laptops,speakers,earphones and more electronics,upto 70% off!</p>
+        </div>
+        <div><img src="https://img.gkbcdn.com/bn/2211/2-636b23e72b40c91ee886b171._p1_.jpg"/>
+            <h2>Smart Home & Garden</h2>
+            <p>smart cleaning robots and vacuums,kitchen supplies,living room furniture,patio & garden supplies,upto 60% off!</p></div>
+        <div>
+            <img src="https://img.gkbcdn.com/bn/2211/1-636b23b32b40c91ee886b170._p1_.jpg"/>
+            <h2>E-transport & outdoor</h2>
+            <p>Electric bikes,electric scooters,portable generators,and more outdoor gear,save $5Q now!</p>
+        </div>
+        
+    </div>
+    <h1>New For You</h1>
+    <div class="middle">
+        <div>
+            <img src="https://img.gkbcdn.com/bn/2211/5-636a188c2b40c958a00d243d._p1_.jpg"/>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-11-04/Q26-Pro-Smartwatch-1-83---TFT-Screen-Black-518108-0._w280_p1_.jpg"/>
+            <p>Q26 pro SmartWatch 1.83" TFT Screen BT5.0 Sports Bracelet 24</p>
+            <h2>₹1593.15</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-10-15/AOSIMAN-140FCC-Portable-14-Inch-Monitor-1920-1200-Resolution-517894-0._w280_p1_.jpg"/>
+            <p>AOSIMAN 140FCC 14" Ultra Slim Portable Monitor 1920x1200 16:10</p>
+            <h2>₹8053.00</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-11-10/Bicycle-U-Lock-with-1-2m-Cable-Anti-theft-518204-0._w280_p1_.jpg"/>
+            <p>Bicycle U LOCK With 1.2m Cable Anti-theft Heavy Duty Bike PassWord Lock</p>
+            <h2>₹2599.88</h2>
+        </div>
+    </div>
+    <div class="enjoy-life">
+        <h1>Enjoy Life</h1>
+        <div class="inner-enjoy-life">
+         <div>
+            <img src="https://img.gkbcdn.com/bn/2209/500x632-63326e5e2b40c9222cacb303._p1_.jpg" alt="">
+         </div>
+         <div>
+            <img src="https://img.gkbcdn.com/bn/2209/210x2107-63326fb32b40c9222cacb304._p1_.jpg" alt="">
+            <img src="https://img.gkbcdn.com/bn/2205/210x2104-62902c152b40c91cb09e7ada._p1_.jpg" alt="">
+         </div>
+         <div>
+            <img src="https://img.gkbcdn.com/bn/2209/210x2106-633270272b40c9222cacb305._p1_.jpg" alt="">
+            <img src="https://img.gkbcdn.com/bn/2209/210x2101-6332707e2b40c9222cacb306._p1_.jpg" alt="">
+         </div>
+         <div>
+            <img src="https://img.gkbcdn.com/bn/2209/210x2102-633270c32b40c9222cacb307._p1_.jpg" alt="">
+            <img src="https://img.gkbcdn.com/bn/2209/210-633271172b40c9222cacb308._p1_.jpg" alt="">
+         </div>
+         <div>
+            <img src="https://img.gkbcdn.com/bn/2209/210x2105-633272852b40c9222cacb30a._p1_.jpg" alt="">
+            <img src="https://img.gkbcdn.com/bn/2209/210x2104-633272352b40c9222cacb309._p1_.jpg" alt="">
+         </div>
+        </div>
+     </div>
+    <h1>Best Sellers</h1>
+    <div class="best ">
+        <div>
+            <img src="https://img.gkbcdn.com/p/2021-10-29/P400-Bluetooth-5-2-TWS-Earbuds-475334-3._w280_p1_.jpg"/>
+            <h3>33%OFF</h3>
+            <p>Air Plus 4 Blutooth 5.2 TWS Earbuds Upto 30H Playtime pop Up Pairing</p>
+            <h4>* * * * * 24</h4>
+            <h2>₹1677.05</h2>
+
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2019-12-24/xiaomi-es3-so-white-3d-smart-floating-blade-head-razor-black-1577180518315._w280_p1_.jpg"/>
+            <h3>14%OFF</h3>
+            <p>So White (PINGJING)ES3 3D Smart Floating Blade Razor IPX7</p>
+            <h4>* * * * * 48</h4>
+            <h2>₹2515.99</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2019-10-11/jjrc-x12-4k-gps-rc-drone-white-two-batteries-with-bag-1574132236117._w280_p1_.jpg"/>
+            <h3>36%OFF</h3>
+            <p>JJBRC X12 AURORA 4K 5G WIFI 3KM FPV GPS FOldable RC Drone With </p>
+            <h4>* * * * * 57</h4>
+            <h2>₹17616.94</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-04-29/8BitDo-Pro-2-Bluetooth-Gamepad-Controller-with-Joystick-Black-500078-0._w280_p1_.jpg"/>
+            <h3>31%OFF</h3>
+            <p>8BitDo Pro 2 Blutooth Controller With JoyStick for Ninetendo Switch,PC, </p>
+            <h4>* * * * * 42</h4>
+            <h2>₹3690.51</h2>
+        </div>
+    </div>
+    <h1>POPULAR BRANDS</h1>
+    <div id="popular">
+        <img src="https://img.gkbcdn.com/bn/2205/1500x2602-628f67e92b40c91f8ca376f9._p1_.jpg"/>
+    </div>
+    <div id="shiva">
+        <div>
+            <img src="https://img.gkbcdn.com/bb/sculpfun-20221007152503762._p1_.jpg"/>
+
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2021-12-22/SCULPFUN-S9-Laser-Engraver-481991-0._w280_p1_.jpg"/>
+            <h3>46%OFF</h3>
+            <p>SCULPFUN S9 5.5W Laser Engraver,0.06mm ULtra</p>
+            <h2>₹18121.15</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-09-23/SCULPFUN-S30-Pro-10W-Laser-Engraver-Cutter-517192-0._w280_p1_.jpg"/>
+            <h3>11%OFF</h3>
+            <p>SCULPFUN S30 Pro 10W Laser Engraver Cutter,</p>
+            <h2>₹39346.38</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-05-12/Sculpfun-S10-Laser-Engraver-500429-0._w280_p1_.jpg"/>
+            <h3>43%OFF</h3>
+            <p>SCULPFUN S10 10W Laser Engraver Cutter,0.08mm</p>
+            <h2>₹33473.79</h2>
+            
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-05-09/Sculpfun-Honeycomb-Panel-400x400mm-500292-0._w280_p1_.jpg"/>
+            <h3>38%OFF</h3>
+            <p>SCULPFUN 400x400mm Laser Cutting Honeycomb</p>
+            <h2>₹4193.87</h2>
+        </div>
+    </div>
+    <div id="kumar">
+        <div>
+            <img src="https://img.gkbcdn.com/bb/engwe-20221110163953412._p1_.jpg"/>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-05-16/engwe-ep-2-pro-folding-electric-moped-bicycle-750w-motor-black-f02f83-1652693914387._w280_p1_.jpg"/>
+            <h3>37%OFF</h3>
+            <p>ENGWE EP-2 Pro Folding Electric Bike 2022 Version</p>
+            <h2>₹77101.29</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-07-11/ENGWE-T14-Folding-Electric-Bicycle-14-Inch-Tire-508466-0._w280_p1_.jpg"/>
+            <h3>37%OFF</h3>
+            <p>ENGWE T14 Folding Electric Bicycle 14 inch</p>
+            <h2>₹43390.92</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-02-24/engwe-c20-pro-folding-electric-bicycle-67247a-1645673469050._w280_p1_.jpg"/>
+            <h3>37%OFF</h3>
+            <p>ENGWE C20 pro Folding Electric Bicycle 20 Inch</p>
+            <h2>₹68818.41</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-10-28/engwe-engine-pro-folding-electric-bicycle-750w-48v-16ah-battery-black-77682a-1666945658891._w280_p1_.jpg"/>
+            <h3>37%OFF</h3>
+            <p>ENGWE ENGINE Pro Folding Electric Bicycle</p>
+            <h2>₹114095.27</h2>
+        </div>
+    </div>
+    <div id="shiva_01">
+        <div>
+            <img src="https://img.gkbcdn.com/bb/tronsmart-20221007152616686._p1_.jpg"/>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2020-01-09/Tronsmart-element-T6-plus-Upgrade-Black-895558-._w280_p1_.jpg"/>
+            <h3>38%OFF</h3>
+            <p>Tronsmart T6 Plus Upgraded Edition</p>
+            <h2>₹4193.87</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-11-04/tronsmart-apollo-q10-anc-bluetooth-headphones--e74f5c-1667556691258._w280_p1_.jpg"/>
+            <h3>50%OFF</h3>
+            <p>Tronsmart Apollo Q10 ANC Active Noise</p>
+            <h2>₹2515.99</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2019-10-24/tronsmart-element-t6-max-60w-bluetooth-5-0-nfc-speaker-black-1574132858241._w280_p1_.jpg"/>
+            <h3>36%OFF</h3>
+            <p>Tronsmart Element T6 Max 60W Bluetooth 5.0</p>
+            <h2>₹5368.39</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2020-03-18/Tronsmart-Onyx-Ace-Bluetooth-5-0-TWS-Earphones-White-899355-._w280_p1_.jpg"/>
+            <h3>40%OFF</h3>
+            <p>Tronsmart Onyx Ace Pro TWS Earbuds,Qualcomm</p>
+            <h2>₹2012.62</h2>
+        </div>
+    </div>
+    <div id="shiva_02">
+        <div>
+            <img src="https://img.gkbcdn.com/bb/creality-20221007150037712._p1_.jpg"/>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-03-02/creality-ender-3-s1-pro-3d-printer-c9e30b-1646215071933._w280_p1_.jpg"/>
+            <h3>36%OFF</h3>
+            <p>Creality Ender-3 S1 Pro 3D Printer,Sprite Full Metal</p>
+            <h2>₹32131.48</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-07-09/creality-ender-3-v2-3d-printer-with-upgraded-32-bit-silent-motherboard-732f54-1657351329700._w280_.JPG"/>
+            <h3>32%OFF</h3>
+            <p>Creality Ender V2 Neo 3D printer,CR tOUCH</p>
+            <h2>₹20050.71</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-05-24/Creality-CR-Scan-Lizard-3D-Scanner-501259-0._w280_p1_.jpg"/>
+            <h3>35%OFF</h3>
+            <p>Creality CR-Scan Lizard 3D Scanner With Color Kit,</p>
+            <h2>₹48574.74</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-10-31/creality-ender-3-s1-3d-printer-303cda-1667202443810._w280_p1_.jpg"/>
+            
+            <p>Creality Ender-5 S1 3D Printer,250mm/s,Sprite</p>
+            <h2>₹46896.83</h2>
+        </div>
+    </div>
+    <div id="shiva_03">
+        <div>
+            <img src="https://img.gkbcdn.com/bb/roborock-20221007152405384._p1_.jpg"/>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-06-25/Roborock-S7-Pro-Ultra-Robot-Vacuum-Cleaner-White-506889-2._w280_p1_.jpg"/>
+            <h3>42%OFF</h3>
+            <p>Roborock S7 pro Ultra Robot Vacuum Cleaner</p>
+            <h2>₹72919.16</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-03-14/Roborock-Q7-Max-Robot-Vacuum-Cleaner-497778-0._w280_p1_.jpg"/>
+            <h3>33%OFF</h3>
+            <p>Roborock Q7 Max Robot Vacuum Cleaner 2 in 1</p>
+            <h2>₹31040.02</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2021-02-20/roborock-s7-robot-vacuum-cleaner-2500pa-powerful-suction-1613791182553._w280_p1_.jpg"/>
+            <h3>44%OFF</h3>
+            <p>Roborock S7 Robot Vacuum Cleaner With</p>
+            <h2>₹33137.37</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-07-14/Roborock-S7-Series-Robotic-Vacuum-Cleaner-Mop-Cloth-508860-0._w280_p1_.jpg"/>
+            <h3>5%OFF</h3>
+            <p>2PCS original Mop Cloth Accessories for Roborock</p>
+            <h2>₹1593.15</h2>
+        </div>
+    </div>
+    <div id="shiva_04">
+        <div>
+            <img src="https://img.gkbcdn.com/bb/proscenic-20221007152344729._p1_.jpg"/>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2021-05-13/Proscenic-A9-Smart-Air-Purifier-White-459704-0._w280_p1_.jpg"/>
+            <h3>37%OFF</h3>
+            <p>Proscenic A9 Smart Air Purifier LED Digital</p>
+            <h2>₹6375.12</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2021-05-20/proscenic-p11-handheld-cordless-vacuum-cleaner-25kpa-suction-gray-1621508593013._w280_p1_.jpg"/>
+            <h3>37%OFF</h3>
+            <p>Proscenic p11 Handheld Cord Vacuum Cleaner</p>
+            <h2>₹12583.29</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2020-11-18/proscenic-m7-pro-robot-vacuum-cleaner-black-1605689442227._w280_p1_.jpg"/>
+            <h3>37%OFF</h3>
+            <p>Proscenic M7 pro LDS Robot Vacuum Cleaner</p>
+            <h2>₹20972.71</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2020-07-23/Proscenic-P10-Wireless-Hand-Held-Vacuum-Cleaner-Portable-Rechargeable-425841-1._w280_p1_.jpg"/>
+            <h3>37%OFF</h3>
+            <p>Proscenic p10 Handheld Cordless Vacuum Cleaner</p>
+            <h2>₹10569.83</h2>
+        </div>
+    </div>
+    <h1>Recommended For You</h1>
+    <div id="mani">
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-04-28/SAMEBIKE-XWLX09--Electric-Bike-500047-0._w280_.jpg"/>
+            <p>SAMEBIKE XWLX09 20 inches Fat Tire</p>
+            <h2>₹89765.96</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-10-28/engwe-engine-pro-folding-electric-bicycle-750w-48v-16ah-black-2359fc-1666945376315._w280_.jpg"/>
+            <p>ENGWE ENGINE Pro Folding Electric</p>
+            <h2>₹112290.71</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2021-08-13/-kaisda-k1-26-inch-500w-folding-electric-moped-folding-bike-white-1628852959338._w280_.jpg"/>
+            <p>KAISDA K2 20*4.0 inch Fat Tire CST</p>
+            <h2>₹83054.42</h2>
+        </div>
+            
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-10-21/bk6-electric-bike-48v-350w-motor-10ah-battery-black-8576de-1666340582343._w280_.jpg"/>
+            <p>ONESPORT BK6 Electric Bike 48V</p>
+            <h2>₹69631.35</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-05-31/Mobile-Air-Conditioner-12-000-BTU-h-with-Dehumidification-up-to-100-m--501459-0._w280_.jpg"/>
+            <p>Mobile Air Condition 12,000</p>
+            <h2>₹27684.25</h2>
+        </div>
+        <div>
+            <img src="https://img.gkbcdn.com/p/2022-10-21/ATEM-POWER-AP500X-500W-Portable-Power-Station-518011-0._w280_.jpg"/>
+            <p>ATEM POWER AP500X Portable</p>
+            <h2>₹38590.49</h2>
+        </div>
+
+    </div>
+    <div id="why">
+        <h1>Why buy from geekbuying?   +</h1>
+    </div>
+    <div id="input">
+        <input placeholder="Enter email to get a 5% off coupon">Subscribe</input>
+    </div>
+
+    <div class="shiva">
+        <div>
+            <h2>Help</h2>
+            <p>Order status</p>
+            <p>About us</p>
+            <p>Contact us</p>
+            <p>Warranty</p>
+            <p>FAQs</p>
+            <p>Sitemap</p>
+        </div>
+        <div>
+            <h2>Support</h2>
+            <p>WhatGeek</p>
+            <p>Shipping guide</p>
+            <p>payment information</p>
+            <p>Wholesale</p>
+            <p>Drop shipping</p>
+            <p>blog</p>
+            <p>Affiliates</p>
+        </div>
+        <div>
+            <h2>Policies</h2>
+            <p>Terms & Conditions</p>
+            <p>Return policy</p>
+            <p>Privacy</p>
+            <p>Declaration</p>
+            <p>Customs</p>
+            
+        </div>
+        
+        <div>
+            <h2>Download The App</h2>
+            <img src="https://content1.geekbuying.com/V1.4/en/images/index_images/android_app.png"/>
+            <h2>Connect with us</h2>
+        </div>
+        
+        
+        <div>
+            <p>Service_Payment@geekbuying.com</p>
+            <p>Tickets</p>
+            <p>Live Chat<p>
+        </div>
+        
+
+        
+
+
+    </div>
+    
+</body>
+</html>
+<script>
+    let f=localStorage.getItem("data") || "Sign in"
+    document.querySelector("#midnav>a").innerText=f;
+</script>

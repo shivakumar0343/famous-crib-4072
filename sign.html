@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #topn{
+            text-align: center;
+            background-color: blue;
+            padding: 20px auto;
+        }
+        form{
+            display:flex;
+            flex-direction: column;
+            width:25%;
+            margin:auto;
+            background-color: aqua;
+            padding:40px;
+        }
+        form>*{
+            margin:20px auto;
+            font-size:18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="topn">
+        <a href="./index.html"><h1>Geekbuying</h1></a>
+        </div>
+      
+    </div>
+    <div >
+        <form>
+            <input type="text" placeholder="email ">
+            <input type="text" placeholder="Password">
+            <a href="">forgot Password</a>
+            <input type="submit">
+            <button id="cc"  value="Create account">Create account</button>
+
+        </form>
+
+    </div>
+    <div></div>
+    
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",(event)=>{ 
+        event.preventDefault();
+        let x=document.querySelector("input").value;
+        localStorage.setItem("data",x);
+        location.href=('./index.html');
+    })
+</script>
